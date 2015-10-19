@@ -1,0 +1,15 @@
+#content {
+	text-align: center;
+}
+
+#user_options {
+	margin: 2%;
+}
+
+#user_options input {
+	margin: 0.5%;
+}
+
+#messages div {
+	margin: 0.5%;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset="utf-8">
+		<title>Чат - тестовое задание</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel='stylesheet'href='/css/style.css'></link>
+	</head>
+	<body>
+		<div id='content'>
+			<h1>Чат</h1>
+			<h3>Текущая комната:</h3>
+			<div id='room'></div>
+			<h3>Список комнат:</h3>
+			<div id='room-list'></div>
+			<h3>Сообщения</h3>
+			<div id='messages'></div>
+			<div id="form-div">
+				<form id='send-form'>
+					<input id='send-message'/>
+					<input id='send-button'type='submit'value='Отправить'/>
+				</form>
+			</div>
+			<div id="user_options" >
+				<input id="nickname" type="text" />
+				<input id="name_change" type="button" value="Сменить имя пользователя"/>
+				<br>
+				<input id="roomname" type="text" />
+				<input id="room_change" type="button" value="Создать/войти в комнату"/>
+			</div>
+		</div>
+		<script src='socket.io/socket.io.js'type='text/javascript'></script>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src='/javascript/logic.js'type='text/javascript'></script>
+		<script src='/javascript/ui.js'type='text/javascript'></script>
+	</body>
+</html>
